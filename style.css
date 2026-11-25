@@ -1,0 +1,115 @@
+/* Page ki basic setting */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+}
+
+/* Beech wala box */
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;      /* beech mein */
+  padding: 16px;
+}
+
+/* Safed dibba */
+.card, .stat, .item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* 4 boxes ek line mein */
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  text-align: center;
+}
+
+/* Form ke input aur buttons */
+input, select, button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  background: #3b5bdb;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Filter tabs ek line mein */
+.tabs {
+  display: flex;
+  gap: 6px;
+}
+
+.tabs button {
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+.tabs button.on {
+  background: #3b5bdb;
+  color: white;
+}
+
+/* Assignment item */
+.item {
+  display: flex;
+  gap: 10px;
+  border-left: 4px solid #3b5bdb;   /* homework = neela */
+}
+
+.item.lab  { border-left-color: purple; }   /* lab = purple */
+.item.done { opacity: 0.5; }                /* submit hua = halka */
+
+.body { flex: 1; }
+.t { font-weight: bold; }
+.m { font-size: 13px; color: gray; }
+
+/* Rang: hara, narangi, laal */
+.ok   { color: green; }
+.warn { color: orange; }
+.bad  { color: red; }
+
+/* Delete aur theme button */
+.del, .top button {
+  width: auto;
+  background: transparent;
+  color: gray;
+}
+
+/* Team table */
+table { width: 100%; }
+td, th { text-align: left; }
+
+body.dark {
+  background: #171821;
+  color: #f5f6fa;
+}
+
+body.dark .card,
+body.dark .stat,
+body.dark .item,
+body.dark .tabs button {
+  background: #252733;
+  border-color: #444758;
+  color: #f5f6fa;
+}
+
+body.dark input,
+body.dark select,
+body.dark .tabs button.on {
+  background: #303340;
+  border-color: #444758;
+  color: #f5f6fa;
+}
